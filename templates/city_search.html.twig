@@ -1,0 +1,20 @@
+{{ attach_library('city_search/city_search') }}
+<h1>{{ name }}</h1>
+<div id="search_form">
+    <div id="search-wrap">
+        <div class="input-div">
+            {{ form }}
+        </div>
+        <div class="search-buttom-div">
+            {#{{ form.submit }}#}
+        </div>
+    </div>
+    <div id="search_result">
+        <ul id="result-list"></ul>
+    </div>
+
+</div>
+
+<div id="search-nodes-list" class="clearfix">
+    {{ list }}
+</div>

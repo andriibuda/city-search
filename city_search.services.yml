@@ -1,0 +1,6 @@
+services:
+  city_search.db_logic:
+    class: Drupal\city_search\CitySearchDbLogic # Хз, чи з лапками, чи без, зараз роблю без лапок, все як в попередньому, потім в процесі тестування додам
+    arguments: ['@database']
+    tags:
+      - { name: backend_overridable }

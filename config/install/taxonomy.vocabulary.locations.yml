@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - city_search
+name: Locations
+vid: locations
+description: 'Stores the locations for cities_search module'
+hierarchy: 0
+weight: 0

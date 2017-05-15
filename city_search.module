@@ -1,0 +1,56 @@
+<?php
+/**
+* @file
+* A description of what your module does.
+*/
+
+/**
+ * Implements hook_theme().
+ */
+function city_search_theme($existing, $type, $theme, $path)
+{
+    return array(
+        'city_search' => array(
+            'variables' => array(
+                'form' => NULL,
+                'name' => NULL,
+                'list' => NULL,
+            ),
+            'template' => 'city_search',
+        ),
+
+        'city_search__search' => array(
+            'variables' => array(
+                'form' => NULL,
+                'name' => NULL,
+                'list' => NULL,
+            ),
+            'template' => 'city_search',
+        ),
+
+        'city_search__taxonomy' => array(
+            'variables' => array(
+                'form' => NULL,
+                'name' => NULL,
+                'list' => NULL,
+            ),
+            'template' => 'city_search__taxonomy',
+        ),
+
+        'city_search_navigation_block' => array(
+            'variables' => array(
+                'text' => NULL,
+            ),
+            'template' => 'city_search_navigation_block',
+        ),
+
+        'city_search_create' => array(
+            'variables' => array(
+                'form' => NULL,
+                'name' => NULL,
+                'list' => NULL,
+            ),
+            'template' => 'city_search_create',
+        ),
+    );
+}

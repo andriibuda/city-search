@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.hotel.body
+        - field.field.node.hotel.field_image
+        - field.field.node.hotel.field_location
+        - image.style.thumbnail
+        - node.type.hotel
+    module:
+        - image
+        - text
+        - user
+id: node.hotel.default
+targetEntityType: node
+bundle: hotel
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_textarea_with_summary
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    field_image:
+        type: image_image
+        weight: 4
+        settings:
+          progress_indicator: throbber
+          preview_image_style: thumbnail
+        third_party_settings: {  }
+    field_location:
+        type: string_textfield
+        weight: 5
+        settings:
+            size: 60
+            placeholder: ''
+        third_party_settings: {  }
+    links:
+        weight: 100
+    created:
+        type: datetime_timestamp
+        weight: 10
+        settings: {  }
+        third_party_settings: {  }
+    title:
+        type: string_textfield
+        weight: 0
+        settings:
+          size: 60
+          placeholder: ''
+        third_party_settings: {  }
+    uid:
+        type: entity_reference_autocomplete
+        weight: 1
+        settings:
+          match_operator: CONTAINS
+          size: 60
+          placeholder: ''
+        third_party_settings: {  }
+hidden: {  }

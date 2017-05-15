@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.hotel.body
+        - field.field.node.hotel.field_image
+        - field.field.node.hotel.field_location
+        - image.style.medium
+        - node.type.hotel
+    module:
+        - image
+        - text
+        - user
+id: node.hotel.teaser
+targetEntityType: node
+bundle: hotel
+mode: teaser
+content:
+    body:
+        label: hidden
+        type: text_summary_or_trimmed
+        weight: 99
+        settings:
+            trim_length: 300
+        third_party_settings: {  }
+    field_image:
+        type: image
+        weight: -1
+        settings:
+          image_style: medium
+          image_link: content
+        third_party_settings: {  }
+        label: hidden
+    field_location:
+#        type: text_default
+#        weight: 10
+#        settings:
+#          link: true
+#        third_party_settings: {  }
+#        label: above
+        type: entity_reference_label
+        weight: 10
+        settings:
+            link: true
+        third_party_settings: {  }
+        label: aboves
+    links:
+        weight: 100
+hidden: {  }

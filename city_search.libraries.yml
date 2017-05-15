@@ -1,0 +1,40 @@
+google.maps:
+  version: 3
+  js:
+#    https://maps.googleapis.com/maps/api/js?key=AIzaSyCHArm25zVfSdli0MpPGqkgSXRfMmF7amQ: { type: external, minified: true }
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyCHArm25zVfSdli0MpPGqkgSXRfMmF7amQ&signed_in=true&libraries=places: { type: external, minified: true }
+
+city_search:
+  version: VERSION
+  js:
+    js/awesomplete/awesomplete.js: {}
+    js/script.js: {}
+  css:
+    theme:
+      css/city_search.css: {}
+    fonts:
+      css/font-awesome.css: {}
+#    awesomplete:
+#      js/awesomplete/awesomplete.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - city_search/google.maps
+
+city_search.navigation:
+  version: VERSION
+  css:
+    theme:
+      css/city_search_navigation.css: {}
+
+city_search.create_form:
+  version: VERSION
+  css:
+    theme:
+      css/city_search_create_form.css: {}
+  js:
+     js/script2.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - city_search/google.maps

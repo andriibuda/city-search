@@ -1,0 +1,46 @@
+#block-citysearchnavigationblock {
+    background-color: #333333;
+    color: #fff;
+    padding: 0;
+}
+
+#block-citysearchnavigationblock h2 {
+    margin: 20px 12px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font: 16px/18px Arial, sans-serif;
+}
+
+#city_search_navigation {
+    padding-left: 0;
+    padding-bottom: 0;
+    border-right: 3px solid #1B9BFF;
+}
+
+#city_search_navigation li {
+    list-style: none;
+}
+
+#city_search_navigation a {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 12px;
+    color: #fff;
+    background-color: #333333;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#city_search_navigation a.active {
+    background-color: #1B9BFF;
+}
+
+#city_search_navigation a:hover {
+    background-color: #1B9BFF;
+}

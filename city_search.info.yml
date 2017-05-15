@@ -1,0 +1,9 @@
+name: City Search Module
+type: module
+description: 'Search city and country.'
+core: 8.x
+dependencies:
+  - node
+  - block
+  - drupal:views
+package: custom

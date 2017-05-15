@@ -1,0 +1,34 @@
+city_search.main:
+  path: '/city-search/search'
+  defaults:
+    _controller: '\Drupal\city_search\Controller\CitySearchController::main'
+  requirements:
+    _permission: 'view content'
+
+city_search.search:
+  path: '/city-search/location/{slug}'
+  defaults:
+    _controller: '\Drupal\city_search\Controller\CitySearchController::search'
+  requirements:
+    _permission: 'view content'
+
+city_search.main.ajax:
+  path: '/city-search/ajax'
+  defaults:
+    _controller: '\Drupal\city_search\Controller\CitySearchController::ajax'
+  requirements:
+    _permission: 'view content'
+
+city_search.create:
+  path: '/city-search/create'
+  defaults:
+    _controller: '\Drupal\city_search\Controller\CitySearchController::createNode'
+  requirements:
+    _permission: 'view content'
+
+city_search.taxonomy:
+  path: '/city-search/taxonomy'
+  defaults:
+    _controller: '\Drupal\city_search\Controller\CitySearchController::taxonomy'
+  requirements:
+    _permission: 'view content'

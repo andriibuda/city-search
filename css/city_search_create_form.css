@@ -1,0 +1,28 @@
+input[type="text"],
+textarea {
+    padding: 8px;
+    width: 100%;
+}
+* {
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    box-shadow: 0 0 10px #008dff;
+    outline: none;
+}
+
+#edit-submit {    
+    border: 2px solid #008dff;
+    color: #008dff;
+    background-color: #fff;
+    transition: all .3s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#edit-submit:hover {
+    background-color: #008dff;
+    color: #fff;
+}

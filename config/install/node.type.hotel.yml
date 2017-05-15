@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - city_search
+name: 'Hotel Node'
+type: hotel
+help: ''
+description: 'Content type that can be used to add <em>Holet</em> page.'
+new_revision: false
+preview_mode: 1
+display_submitted: true
